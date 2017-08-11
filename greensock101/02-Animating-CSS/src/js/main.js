@@ -16,10 +16,10 @@
 	// TweenLite.from(listItem, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut, delay: 1});
 
 	tl
-		.from(h1, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut, delay: 0.2})
-		.from(intro, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut, delay: 0.4})
-		.from(img, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut, delay: 0.6})
-		.from(h2, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut, delay: 0.8})
-		.from(listItem, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut, delay: 1});
+		.from(h1, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut})
+		.from(intro, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.1')
+		.from(img, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.1')
+		.from(h2, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.1')
+		.from(listItem, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.1');
 
 })(jQuery);
