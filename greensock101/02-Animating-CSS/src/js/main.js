@@ -2,6 +2,7 @@
     
 	var img = $('img'),
 			h2 = $('h2');
+			i = 0;
 
 	// Simple Tween
 	TweenLite.from(img, 1, {
@@ -17,11 +18,11 @@
 	}
 
 	function onUpdate() {
-		console.log("animation in progress");
+		h2.text("loading...");
 	}
 
 	function onComplete() {
-		console.log("animation completed");
+		h2.text("loaded");
 	}
 	
 
