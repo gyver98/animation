@@ -22,10 +22,11 @@
 		.from(img, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.15')
 		.from(h2, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.15')
 		.from(listItem, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.15')
-		.staggerFromTo(buttons, 0.2, 
-			{autoAlpha: 0, x: 10}, 
-			{x: -20, autoAlpha: 1, ease:Power1.easeOut}, 
-			0.1);
+		.staggerFrom(buttons, 1, {cycle: {
+			x: [50, -50],
+			scale: [2, 0.5]
+		}, autoAlpha: 0, ease:Power1.easeOut}, 0.5);
+					
 
 	$('#btnPlay').on('click', function() {
 		tl.play();
