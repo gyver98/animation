@@ -17,9 +17,10 @@
 
 	tl
 		.from(h1, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut})
-		.from(intro, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '+=1')
-		.from(img, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, 3)
-		.from(h2, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, 2)
-		.from(listItem, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, 2.5);
+		.add('intro')
+		.from(intro, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut})
+		.from(img, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, 'intro')
+		.from(h2, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, 'intro+=3')
+		.from(listItem, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, 'intro');
 
 })(jQuery);
