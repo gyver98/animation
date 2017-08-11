@@ -154,7 +154,17 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
 
+.buttons button {
+    width: 140px;
+    display: block;
+    margin-bottom: 5px;
+}
 
 
 
