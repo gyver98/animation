@@ -6,7 +6,10 @@
 			intro = $('.intro'),
 			listItem = $('ul li'),
 			buttons = $('button'),
-			tl = new TimelineLite();
+			tl = new TimelineLite({paused: true}),
+			dot = $('.dot'),
+			loader = $('#loader'),
+			tlLoader = new TimelineMax({repeat: 2, onComplete: loadContent});
 
 
 	// Simple Tween
@@ -22,11 +25,28 @@
 		.from(img, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.15')
 		.from(h2, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.15')
 		.from(listItem, 0.3, {y:-15, autoAlpha: 0, ease:Power1.easeInOut}, '-=0.15')
-		.staggerFrom(buttons, 1, {cycle: {
+		.staggerFrom(buttons, 0.2, {cycle: {
 			x: [50, -50],
 			scale: [2, 0.5]
-		}, autoAlpha: 0, ease:Power1.easeOut}, 0.5);
-					
+		}, autoAlpha: 0, ease:Power1.easeOut}, 0.1);
+
+
+	// Loader Timeline
+	tlLoader
+		.staggerFromTo(dot, 0.3,
+			{y:0, autoAlpha:0},
+			{y: 20, autoAlpha:1, ease:Back.easeInOut},
+			0.05
+		)			
+		.fromTo(loader, 0.3,
+			{autoAlpha: 1, scale: 1.3},
+			{autoAlpha: 0, scale: 1, ease: Power0.easeNone},
+			0.9
+		)	
+
+	function loadContent() {
+		console.log("load content");
+	}
 
 	$('#btnPlay').on('click', function() {
 		tl.play();
