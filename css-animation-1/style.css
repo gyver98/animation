@@ -13,3 +13,27 @@ body {
   width: 50%;
   transform: translate(-50%, -40%);
 }
+
+.baymax::before {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  width: 12em;
+  height: 12em;
+  left: -9em;
+  top:-6em;
+  transform: skewX(-4deg);
+}
+
+.baymax::after {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  width: 12em;
+  height: 12em;
+  right: -9em;
+  top: -6em;
+  transform: skewX(4deg);
+}
