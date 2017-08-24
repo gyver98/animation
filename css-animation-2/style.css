@@ -9,6 +9,7 @@ button {
   position: relative;
   overflow: hidden;
   line-height: 2em;
+  transition: all 0.5s cubic-bezier(0.67,-0.51,0.42,1.43);
 }
 
 button::after {
@@ -20,6 +21,10 @@ button::after {
   left: -50%;
   background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
   transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+button:hover {
+  font-size: 24px;
 }
 
 button:hover::after, button:focus::after {
