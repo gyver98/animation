@@ -40,6 +40,11 @@
 		.to(boxHTML, 0.7, {rotationX: -360, ease:Power2.easeInOut})
 		.to(boxSVG, 0.7, {rotationY: -360, ease:Power2.easeInOut})
 		.addPause()
+		.to(boxHTML, 0.7, {left: '50%', top: '50%', x: '-50%', y: '-50%', ease:Power2.easeInOut})
+		.to(boxSVG, 0.7, {left: '50%', top: '50%', x: '-50%', y: '-50%', ease:Power2.easeInOut}, '-=0.7')
+		.addPause()
+		.to([boxSVG, boxHTML], 0.7, {rotation: 720, transformOrigin: '100% 100%', ease:Power2.easeInOut})
+		.addPause()
 		;
 
 	$('#btnNext').on('click',function(){
