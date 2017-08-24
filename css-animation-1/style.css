@@ -15,7 +15,10 @@ body {
 }
 
 .baymax::before {
-  background: #000;
+  animation: blink 6s infinite;
+  background: linear-gradient(to bottom, #efefef, #efefef 50%, #000 50%, #000);
+  background-position: 0 -100%;
+  background-size: 200% 200%;
   border-radius: 50%;
   content: "";
   position: absolute;
@@ -27,7 +30,10 @@ body {
 }
 
 .baymax::after {
-  background: #000;
+  animation: blink 6s 0.1s infinite;
+  background: linear-gradient(to bottom, #efefef, #efefef 50%, #000 50%, #000);
+  background-position: 0 -100%;
+  background-size: 200% 200%;
   border-radius: 50%;
   content: "";
   position: absolute;
@@ -36,4 +42,16 @@ body {
   right: -9em;
   top: -6em;
   transform: skewX(4deg);
+}
+
+@keyframes blink {
+  0%, 50% {
+    background-position: 0 100%;
+  }
+  85%, 95% {
+    background-position: 0 75%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
 }
