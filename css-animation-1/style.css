@@ -4,3 +4,12 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
 }
+
+.baymax {
+  border-bottom: 1.5em solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -40%);
+}
