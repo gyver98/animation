@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS animation 7 - add or remove classes with js</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="show-element">SHOW</button>
+  <div id="to-show" class="hide">
+    <h1>Some hidden content</h1>
+    <p>Pressing the button shows this content</p>
+  </div>
+  <script>
+    (function() {
+      "use strict";
+      
+      document.getElementById('show-element').onclick = function() {
+        var element = document.getElementById('to-show');
+        if(element.className === 'hide') {
+          element.className = 'show';
+          document.getElementsByTagName('body')[0].className = 'on';
+          document.getElementById('show-element').className = 'active';
+        } else {
+          element.className = 'hide';
+          document.getElementsByTagName('body')[0].className = 'off';
+          document.getElementById('show-element').className = '';
+        }
+      }
+      
+    })();
+  </script>
+</body>
+
+</html>
