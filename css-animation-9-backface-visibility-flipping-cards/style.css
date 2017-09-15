@@ -1,0 +1,28 @@
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #1D1F20;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 1.25em;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+height: 100%;
+padding: 52px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
+}
+
+.container {
+pserspective: 1000px;
+}
+
+.container.-column {
+flex-direction: column;
+}
