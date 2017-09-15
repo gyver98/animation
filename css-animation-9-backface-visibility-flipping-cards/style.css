@@ -19,10 +19,6 @@ justify-content: center;
 box-sizing: border-box;
 }
 
-.container {
-pserspective: 1000px;
-}
-
 .container.-column {
 flex-direction: column;
 }
@@ -55,4 +51,39 @@ flex-direction: column;
   position: absolute;
   transition: transform 1s ease;
   backface-visibility: hidden;
+}
+
+.card.-small {
+  width: 320px;
+}
+
+.card--title {
+  color: #4A90E2;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card--title:hover {
+  color: #FF4593;
+}
+
+.card--text {
+  color: #4a4a4a;
+  margin: 12px 0 0 0;
+}
+
+.-orange {
+  background-image: linear-gradient(-143deg, #FA61C2 0%, #F76B1C 100%);
+}
+
+.-green {
+  background-image: linear-gradient(-144deg, #6AEEC6 0%, #698D28 100%);
+}
+
+.-flipped {
+  transform: rotateY(0.5turn);
+}
+
+.container {
+  perspective: 1000px;
 }
