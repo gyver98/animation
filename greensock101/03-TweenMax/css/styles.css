@@ -195,7 +195,7 @@ body {
   font: 16px/26px 'Open Sans', Helvetica, Helvetica Neue, Arial;
   background-color: #76c897;
   color: #2b4d66;
-  padding-bottom: 200px; }
+  overflow: hidden; }
 
 h1 {
   text-transform: uppercase;
@@ -224,9 +224,8 @@ header {
   max-width: 500px;
   padding-top: 15px;
   margin: 0 auto;
-  text-align: center; 
-  opacity: 0;}
-  
+  text-align: center;
+  opacity: 0; }
   header em {
     color: rgba(255, 255, 255, 0.6); }
   header img {
@@ -272,35 +271,109 @@ h2 {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 .buttons {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-}
-
-.buttons button {
+  position: fixed;
+  top: 20px;
+  right: 20px; }
+  .buttons button {
     width: 140px;
     display: block;
-    margin-bottom: 5px;
-}
+    margin-bottom: 5px; }
 
 #loader {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0; }
+  #loader .dot {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 6px;
+    border: 2px #2b4d66 solid; }
 
-#loader .dot {
-  width: 12px;
-  height: 12px;
-  display: inline-block;
+#boxHTML {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(43, 77, 102, 0.8);
+  position: relative; }
+  #boxHTML p {
+    margin: 0;
+    font-size: 40px;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    color: #fff; }
+
+#htmlDOT {
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
-  margin-right: 6px;
-  border: 2px solid #2b4d66;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #B1DEC7; }
+
+#boxHTML, #boxSVG {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  }
+
+.perspective {
+  position: absolute;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  height: 100%;
+  width: 100%; }
+
+.circStroke {
+  opacity: 0; }
+
+.centerH {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1; }
+
+.centerW {
+  height: 100%;
+  width: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1; }
+
+.thanks {
+  font-size: 100px;
+  margin: 0;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: hidden; }
 
 /* ==========================================================================
    Media Queries

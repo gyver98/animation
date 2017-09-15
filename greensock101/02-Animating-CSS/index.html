@@ -20,29 +20,48 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div id="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
         <header id="header">
             <h1><span>GreenSock 101</span><em></em></h1>
             <p class="intro">Your first hour with GSAP, <br /><em>make sure it is a good one</em>.</p>
             <img src="img/petr-tichy-ihatetomatoes-blog.svg" alt="GreenSock 101 - Getting started with GreenSock in 60 minutes.">
 
             <h2>Table Of Content</h2>
-            <!-- 
+             
             <ul class="list">
                 <li><a href=""><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
                 <li><a href=""><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
                 <li><a href=""><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
                 <li><a href=""><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
                 <li><a href=""><span><strong>Lesson 1</strong> - Selectors - jQuery vs JavaScript</span></a></li>
-            </ul> -->
+            </ul> 
         </header>
+
+        <div class="buttons">
+            <button id="btnPlay">play</button>
+            <button id="btnPause">pause</button>
+            <button id="btnResume">resume</button>
+            <button id="btnReverse">reverse</button>
+            <button id="btnSpeedUp">speed up</button>
+            <button id="btnSlowDown">slow down</button>
+            <button id="btnSeek">seek 1 sec</button>
+            <button id="btnProgress">go to 50%</button>
+            <button id="btnRestart">restart</button>
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
         <script src="src/js/main.js"></script>
         
     </body>
