@@ -26,3 +26,15 @@ pserspective: 1000px;
 .container.-column {
 flex-direction: column;
 }
+
+.card-holder {
+  position: relative;
+  width: 320px;
+  height: 148px;
+}
+.card-holder:hover .card.-front {
+  transform: rotateY(-0.5turn);
+}
+.card-holder:hover .card.-back {
+  transform: rotateY(0turn);
+}
