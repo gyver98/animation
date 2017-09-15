@@ -165,3 +165,47 @@ body {
   bottom: 0;
   transform: translateX(38px) translateY(-4px) rotate(-45deg);
 }
+
+/* style 4 - animate to right-pointing arrow */
+
+.c-hamburger--htra {
+  background-color: #ff9650;
+}
+
+.c-hamburger--htra span {
+  transition: transform 0.3s;
+}
+
+.c-hamburger--htra span::before {
+  transform-origin: top left;
+  transition: transform 0.3s, width 0.3s, top 0.3s;
+}
+
+.c-hamburger--htra span::after {
+  transform-origin: bottom left;
+  transition: transform 0.3s, width 0.3s, bottom 0.3s;
+}
+
+/* active state */
+.c-hamburger--htra.is-active {
+  background-color: #e95d00;
+}
+
+.c-hamburger--htra.is-active span {
+  transform: rotate(180deg);
+}
+
+.c-hamburger--htra.is-active span::before,
+.c-hamburger--htra.is-active span::after {
+  width: 50%;
+}
+
+.c-hamburger--htra.is-active span::before {
+  top: 0;
+  transform: translateX(-8px) translateY(4px) rotate(-45deg);
+}
+
+.c-hamburger--htra.is-active span::after {
+  bottom: 0;
+  transform: translateX(-8px) translateY(-4px) rotate(45deg);
+}
