@@ -46,3 +46,28 @@ div.item {
     transform: translateX(0px);
   }
 }
+
+aside {
+  position: absolute;
+  top: .5rem;
+  left: 2rem;
+  right:2rem;
+  height: 1.1rem;
+}
+
+aside div {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  transform: translateX(-50%);
+}
+aside div::before {
+  content: '';
+  transform: translateY(-1rem);
+  background: #000;
+  position: absolute;
+  top: 0;
+  bottom: .5rem;
+  left: 49%;
+  width: 1px;
+}
