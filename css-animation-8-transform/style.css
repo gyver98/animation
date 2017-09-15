@@ -1,0 +1,22 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+div.item {
+  width: 50vmin;
+  height: 50vmin;
+  background: hsl(201, 80%, 46%);
+  color: #fff;
+  font-size: 40vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
