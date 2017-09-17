@@ -1,0 +1,24 @@
+.container {
+  height: 100%;
+  padding: 52px;
+  border: 1px solid #e4e4e4;
+  background: hsl(201, 80%, 46%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  animation: fadeOut 2s ease;
+
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
