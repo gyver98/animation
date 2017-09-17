@@ -12,6 +12,8 @@
 
 h1 {
   animation: fadeOut 2s ease;
+  /* By using animation-fill-mode: forwards; we can get the element to stay faded out by retaining the styles in the final keyframe:   */
+  animation-fill-mode: forwards;
 
 }
 @keyframes fadeOut {
