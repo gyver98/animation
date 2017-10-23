@@ -29,7 +29,7 @@ div.item {
   0% {
     transform: translate(0px);
   }
-  /* from 0% to 20% the browser will animate 
+  /* from 0% to 20% the browser will animate ~
   from translate(0) (which would be no transform visually applied)
   to a scale of .5  */
   20% {
