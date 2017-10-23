@@ -6,6 +6,15 @@
   margin-left: -28px;
 }
 
+.fab:hover .fab-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fab:hover .fab-buttons__link {
+  transform: scaleY(1) scaleX(1) translateY(-16px) translateX(0px);
+}
+
 .fab-action-button {
   position: absolute;
   bottom: 0;
